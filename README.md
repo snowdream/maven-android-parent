@@ -10,7 +10,7 @@ Download [the latest JAR][1] or grab via Maven:
 <dependency>
   <groupId>com.github.snowdream.android</groupId>
   <artifactId>parent</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <type>pom</type>
 </dependency>
 ```
