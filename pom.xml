@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
@@ -8,7 +7,7 @@
 	</parent>
 	<groupId>com.github.snowdream.android</groupId>
 	<artifactId>parent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>pom</packaging>
 	<name>maven-android-parent</name>
 	<description>The parent pom for the android project with maven.</description>
@@ -103,6 +102,10 @@
 	</mailingLists>
 	<properties>
 		<platform.version>4.1.1.4</platform.version>
+		<platform.sdk.version>16</platform.sdk.version>
+		<junit.version>4.11</junit.version>
+		<android.plugin.version>3.6.0</android.plugin.version>
+		<maven.compile.plugin.version>3.1</maven.compile.plugin.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -110,6 +113,18 @@
 				<groupId>com.google.android</groupId>
 				<artifactId>android</artifactId>
 				<version>${platform.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.google.android</groupId>
+				<artifactId>android-test</artifactId>
+				<version>${platform.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
 				<scope>provided</scope>
 			</dependency>
 		</dependencies>
@@ -128,12 +143,12 @@
 				<plugin>
 					<groupId>com.jayway.maven.plugins.android.generation2</groupId>
 					<artifactId>android-maven-plugin</artifactId>
-					<version>3.6.0</version>
+					<version>${android.plugin.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.1</version>
+					<version>${maven.compile.plugin.version}</version>
 					<configuration>
 						<source>1.6</source>
 						<target>1.6</target>
@@ -146,7 +161,7 @@
 					<configuration>
 						<sdk>
 							<path>${env.ANDROID_HOME}</path>
-							<platform>${platform.version}</platform>
+							<platform>${platform.sdk.version}</platform>
 						</sdk>
 						<undeployBeforeDeploy>true</undeployBeforeDeploy>
 					</configuration>
