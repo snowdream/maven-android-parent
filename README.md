@@ -4,7 +4,7 @@
 It is the parent pom for the android project with maven. You can fork it,then modify the pom file to meet your needs.
 
 ##Download
-Download [the latest JAR][1] or grab via Maven:
+Download [the latest POM][1] or grab via Maven:
 
 ```xml
 <dependency>
@@ -32,4 +32,4 @@ Download [the latest JAR][1] or grab via Maven:
  limitations under the License.
 ```
 
-[1]
+[1]:https://oss.sonatype.org/content/groups/public/com/github/snowdream/android/parent/0.0.1/parent-0.0.1.pom
