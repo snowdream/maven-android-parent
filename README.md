@@ -31,5 +31,6 @@ Download [the latest POM][1] or grab via Maven:
  See the License for the specific language governing permissions and
  limitations under the License.
 ```
+[![Build Status](https://travis-ci.org/snowdream/maven-android-parent.png)](https://travis-ci.org/snowdream/maven-android-parent)
 
 [1]:https://oss.sonatype.org/content/groups/public/com/github/snowdream/android/parent/0.0.1/parent-0.0.1.pom
