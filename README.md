@@ -7,12 +7,11 @@ It is the parent pom for the android project with maven. You can fork it,then mo
 Download [the latest POM][1] or grab via Maven:
 
 ```xml
-<dependency>
-  <groupId>com.github.snowdream.android</groupId>
-  <artifactId>parent</artifactId>
-  <version>0.0.1</version>
-  <type>pom</type>
-</dependency>
+<parent>
+   <groupId>com.github.snowdream.android</groupId>
+   <artifactId>parent</artifactId>
+   <version>0.0.2</version
+</parent>
 ```
 
 ##License
@@ -33,4 +32,4 @@ Download [the latest POM][1] or grab via Maven:
 ```
 [![Build Status](https://travis-ci.org/snowdream/maven-android-parent.png)](https://travis-ci.org/snowdream/maven-android-parent)
 
-[1]:https://oss.sonatype.org/content/groups/public/com/github/snowdream/android/parent/0.0.1/parent-0.0.1.pom
+[1]:https://oss.sonatype.org/content/groups/public/com/github/snowdream/android/parent/0.0.1/parent-0.0.2.pom
