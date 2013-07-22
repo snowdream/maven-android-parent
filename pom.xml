@@ -74,8 +74,8 @@
 		<url>https://github.com/snowdream/maven-android-parent/issues</url>
 	</issueManagement>
 	<ciManagement>
-		<system>continuum</system>
-		<url>http://127.0.0.1:8080/continuum</url>
+		<system>travis-ci</system>
+		<url>https://travis-ci.org/snowdream/maven-android-parent</url>
 		<notifiers>
 			<notifier>
 				<type>mail</type>
@@ -84,7 +84,7 @@
 				<sendOnSuccess>false</sendOnSuccess>
 				<sendOnWarning>false</sendOnWarning>
 				<configuration>
-					<address>continuum@127.0.0.1</address>
+					<address>yanghui1986527@gmail.com</address>
 				</configuration>
 			</notifier>
 		</notifiers>
