@@ -70,8 +70,8 @@
 		</contributor>
 	</contributors>
 	<issueManagement>
-		<system>Bugzilla</system>
-		<url>http://127.0.0.1/bugzilla/</url>
+		<system>Github</system>
+		<url>https://github.com/snowdream/maven-android-parent/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>continuum</system>
