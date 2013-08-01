@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
@@ -107,6 +108,7 @@
 		<junit.version>4.11</junit.version>
 		<maven.compile.plugin.android.version>3.6.0</maven.compile.plugin.android.version>
 		<maven.compile.plugin.version>3.1</maven.compile.plugin.version>
+		<nexus.staging.maven.plugin.version>1.4.5</nexus.staging.maven.plugin.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -157,6 +159,18 @@
 						<undeployBeforeDeploy>true</undeployBeforeDeploy>
 					</configuration>
 					<extensions>true</extensions>
+				</plugin>
+				<plugin>
+					<groupId>org.sonatype.plugins</groupId>
+					<artifactId>nexus-staging-maven-plugin</artifactId>
+					<version>${nexus.staging.maven.plugin.version}</version>
+					<extensions>true</extensions>
+					<configuration>
+						<!-- The Base URL of Nexus instance where we want to stage -->
+						<nexusUrl>http://localhost:8081/nexus/</nexusUrl>
+						<!-- The server "id" element from settings to use authentication from -->
+						<serverId>local-nexus</serverId>
+					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
