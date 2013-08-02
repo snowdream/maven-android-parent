@@ -10,7 +10,7 @@ Download [the latest POM][1] or grab via Maven:
 <parent>
    <groupId>com.github.snowdream.android</groupId>
    <artifactId>parent</artifactId>
-   <version>0.0.6</version>
+   <version>0.0.7</version>
 </parent>
 ```
 
@@ -32,4 +32,4 @@ Download [the latest POM][1] or grab via Maven:
 ```
 [![Build Status](https://travis-ci.org/snowdream/maven-android-parent.png)](https://travis-ci.org/snowdream/maven-android-parent)
 
-[1]:https://oss.sonatype.org/content/groups/public/com/github/snowdream/android/parent/0.0.6/parent-0.0.6.pom
+[1]:https://oss.sonatype.org/content/groups/public/com/github/snowdream/android/parent/0.0.7/parent-0.0.7.pom
