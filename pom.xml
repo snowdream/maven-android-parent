@@ -12,6 +12,8 @@
 	<packaging>pom</packaging>
 	<name>maven-android-parent</name>
 	<description>The parent pom for the android project with maven.</description>
+	<url>https://github.com/snowdream/maven-android-parent</url>
+	<inceptionYear>2013</inceptionYear>
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
